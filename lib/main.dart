@@ -7,7 +7,10 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final title = 'StartNG: Dashboard';
+    final title = "StartNG: Dashboard";
+    var fullName = "Innocent Thomas";
+    var slackUsername = "innthomas";
+    var startngEmail = "innthomas00158@gmail.com";
 
     return MaterialApp(
       title: title,
@@ -18,17 +21,17 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: <Widget>[
             ListTile(
-              title: Text('Full Name: Innocent Thomas'),
+              title: Text('fullName: $fullName'),
             ),
             ListTile(
               //leading: Icon(Icons.photo_album),
-              title: Text('Slack Username: innthomas'),
+              title: Text('Slack Username: $slackUsername'),
             ),
             ListTile(
               //leading: Icon(Icons.phone),
-              title: Text('Start.NG email address: innthomas00158@gmail.com'),
+              title: Text('Start.NG email address: $startngEmail'),
             ),
-          ],
+          ],),
         ),
       ),
     );
