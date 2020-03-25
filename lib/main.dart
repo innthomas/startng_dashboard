@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     var fullName = "Innocent Thomas";
     var slackUsername = "innthomas";
     var startngEmail = "innthomas00158@gmail.com";
+    var tracks = {"backend":"golang","mobile":"flutter"};
 
     return MaterialApp(
       title: title,
@@ -24,13 +25,16 @@ class MyApp extends StatelessWidget {
               title: Text('fullName: $fullName'),
             ),
             ListTile(
-              //leading: Icon(Icons.photo_album),
+              
               title: Text('Slack Username: $slackUsername'),
             ),
             ListTile(
-              //leading: Icon(Icons.phone),
+              
               title: Text('Start.NG email address: $startngEmail'),
             ),
+            ListTile(
+              
+              title: Text('Tracks: $tracks'),),
           ],),
         ),
       );
